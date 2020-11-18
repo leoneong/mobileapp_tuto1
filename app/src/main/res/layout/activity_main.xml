@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#673AB7"
+        android:gravity="center"
+        android:text="@string/main_menu"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iconrelative"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:visibility="visible"
+            app:srcCompat="@drawable/linear_layout"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TV10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/contraint_layout" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/relative_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icongrid"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/todo"
+            android:visibility="visible"
+            app:srcCompat="@drawable/relative_layout"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/TV11"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/textview" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/grid_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/icon_others"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/grid_view" />
+
+        <TextView
+            android:id="@+id/TV12"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/textview" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_else"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/constraint_layout" />
+
+</LinearLayout>

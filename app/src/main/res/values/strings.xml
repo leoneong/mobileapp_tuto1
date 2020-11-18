@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">layout_activity</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="this_is_a_relative_layout">This is a relative layout</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="back_to_home">Back to home</string>
+    <string name="contraint_layout">Contraint layout</string>
+    <string name="grid_layout">Grid layout</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="todo">TODO</string>
+    <string name="relative_layout">RELATIVE LAYOUT</string>
+    <string name="other_layout">OTHER LAYOUT</string>
+    <string name="constraint_layout">CONSTRAINT LAYOUT</string>
+    <string name="image_1">image 1</string>
+    <string name="image_2">image_2</string>
+    <string name="image_3">image_3</string>
+    <string name="image_4">image_4</string>
+    <string name="grid_calculator">Grid Calculator</string>
+
+</resources>

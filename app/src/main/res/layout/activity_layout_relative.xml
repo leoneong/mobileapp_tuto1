@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:background="#FFFFFF"
+    tools:context=".layout_relative">
+
+    <TextView
+        android:id="@+id/TV_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F44336"
+        android:gravity="center"
+        android:text="@string/this_is_a_relative_layout"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TV1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="#2196F3"
+        android:text="@string/textview"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TV2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV_title"
+        android:layout_toEndOf="@id/TV1"
+        android:layout_toRightOf="@id/TV1"
+        android:background="#673AB7"
+        android:text="@string/textview"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TV3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TV2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="#673AB7"
+        android:text="@string/textview"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/TV4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/enter_your_name"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/TV4"
+        android:layout_toRightOf="@id/TV4"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_your_name"
+        android:inputType="textPersonName"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textColorHint="#673AB7" />
+
+    <Button
+        android:id="@+id/btn_backtohome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTextPersonName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/TV4"
+        android:layout_toRightOf="@id/TV4"
+        android:text="@string/back_to_home" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".contrainst_ac">
+
+    <ImageView
+        android:id="@+id/imgV1"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="@string/image_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/relative_layout" />
+
+    <ImageView
+        android:id="@+id/imgV2"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="@string/image_2"
+        app:layout_constraintStart_toEndOf="@+id/imgV1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/relative_layout" />
+
+    <ImageView
+        android:id="@+id/imgV3"
+        android:layout_width="87dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="92dp"
+        android:contentDescription="@string/image_3"
+        app:layout_constraintStart_toEndOf="@+id/imgV2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/relative_layout" />
+
+    <ImageView
+        android:id="@+id/imgV4"
+        android:layout_width="113dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="124dp"
+        android:background="#4CAF50"
+        android:contentDescription="@string/image_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgV2"
+        app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+    <Button
+        android:id="@+id/btn_cl_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_to_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgV4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
